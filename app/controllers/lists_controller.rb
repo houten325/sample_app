@@ -1,7 +1,6 @@
 class ListsController < ApplicationController
   def new
     @list = List.new
-
   end
 
   def create
@@ -11,6 +10,7 @@ class ListsController < ApplicationController
   end
 
   def index
+    @lists = List.all
   end
 
   def show
